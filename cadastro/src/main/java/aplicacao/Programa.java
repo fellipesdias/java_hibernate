@@ -3,17 +3,16 @@ package aplicacao;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-
-import dominio.pessoa;
+import dominio.Pessoa;
 
 
 public class Programa {
 
 	public static void main(String[] args) {
 		
-		pessoa p1  = new pessoa(null, "Fellipe Soares Dias","fellipesoaresdias@gmail.com");
-		pessoa p2  = new pessoa(null, "Joao das Neves","joaodasneves@gmail.com");
-		pessoa p3  = new pessoa(null, "William Arao","williamarao@gmail.com");
+		Pessoa p1  = new Pessoa(null, "Fellipe Soares Dias","fellipesoaresdias@gmail.com");
+		Pessoa p2  = new Pessoa(null, "Joao das Neves","joaodasneves@gmail.com");
+		Pessoa p3  = new Pessoa(null, "William Arao","williamarao@gmail.com");
 		
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("cadastro-jpa");
 		EntityManager em = emf.createEntityManager();
